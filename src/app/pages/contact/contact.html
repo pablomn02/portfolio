@@ -42,27 +42,15 @@
       
       <div class="contact-form">
         <h2>Enviar Mensaje</h2>
-        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
-          </div>
-          <div class="form-group">
-            <label for="subject">Asunto</label>
-            <input type="text" id="subject" name="subject" [(ngModel)]="formData.subject" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" [(ngModel)]="formData.message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">
-            Enviar Mensaje
-          </button>
-        </form>
+        <p class="form-description">¿Tienes un proyecto en mente o quieres colaborar? ¡Hablemos!</p>
+        
+        <div class="email-button-container">
+          <a href="mailto:pablomnavarro9@gmail.com" class="btn btn-primary btn-large">
+            <i class="icon email"></i>
+            Enviar Email
+          </a>
+          <p class="email-note">Se abrirá tu cliente de correo con mi dirección ya configurada</p>
+        </div>
       </div>
     </div>
   </div>

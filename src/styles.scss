@@ -81,6 +81,11 @@ body {
   line-height: 1.6;
   color: var(--gray-800);
   background-color: var(--white);
+  background-image: url('./assets/images/background-blur.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -231,6 +236,23 @@ a:hover {
   gap: var(--spacing-6);
 }
 
+/* Background overlay */
+.background-overlay {
+  position: relative;
+}
+
+.background-overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* Cards */
 .card {
   background-color: var(--white);
@@ -239,6 +261,8 @@ a:hover {
   padding: var(--spacing-6);
   transition: box-shadow var(--transition-normal);
   cursor: pointer;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .card:hover {

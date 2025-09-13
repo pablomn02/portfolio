@@ -7,8 +7,7 @@
         </h1>
         <h2 class="hero-subtitle">Desarrollador Full Stack</h2>
         <p class="hero-description">
-          Especializado en desarrollo backend con Java/Spring Boot y frontend con Angular. 
-          Apasionado por crear soluciones tecnológicas innovadoras y siempre aprendiendo nuevas tecnologías.
+          Especializado en desarrollo backend con Java/Spring Boot y frontend con Angular.
         </p>
         <div class="hero-buttons">
           <a routerLink="/projects" class="btn btn-primary">Ver Proyectos</a>
@@ -18,7 +17,7 @@
       <div class="hero-image">
         <div class="profile-card">
           <div class="profile-image">
-            <img src="https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png" alt="Pablo Menéndez Navarro">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEyvtjlLK2v2w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715177093091?e=2147483647&v=beta&t=OGODHiHJajaTNhwWavOUS37PRCfs4o4WoKxRZ0VFWGA" alt="Pablo Menéndez Navarro">
           </div>
           <div class="profile-info">
             <h3>Pablo Menéndez Navarro</h3>
@@ -74,14 +73,17 @@
           <div class="project-tech">
             <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
           </div>
-          <div class="project-links">
-            <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-small">
-              <i class="icon github"></i> Código
-            </a>
-            <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-small btn-primary">
-              <i class="icon external"></i> Demo
-            </a>
-          </div>
+        </div>
+        <div class="project-links">
+          <a [routerLink]="['/project', project.id]" class="btn btn-small btn-primary">
+            <i class="icon eye"></i> Ver Detalles
+          </a>
+          <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-small">
+            <i class="icon github"></i> Código
+          </a>
+          <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-small">
+            <i class="icon external"></i> Demo
+          </a>
         </div>
       </div>
     </div>

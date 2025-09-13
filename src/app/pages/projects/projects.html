@@ -18,14 +18,17 @@
           <div class="project-tech">
             <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
           </div>
-          <div class="project-links">
-            <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-small">
-              <i class="icon github"></i> Código
-            </a>
-            <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-small btn-primary">
-              <i class="icon external"></i> Demo
-            </a>
-          </div>
+        </div>
+        <div class="project-links">
+          <a [routerLink]="['/project', project.id]" class="btn btn-small btn-primary">
+            <i class="icon eye"></i> Ver Detalles
+          </a>
+          <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-small">
+            <i class="icon github"></i> Código
+          </a>
+          <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-small">
+            <i class="icon external"></i> Demo
+          </a>
         </div>
       </div>
     </div>

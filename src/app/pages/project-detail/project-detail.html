@@ -1,0 +1,177 @@
+@if (project) {
+<div class="project-detail">
+  <!-- Hero Section -->
+  <section class="project-hero">
+    <div class="container">
+      <button class="back-btn" (click)="goBack()">
+        <i class="icon arrow-left"></i>
+        Volver a Proyectos
+      </button>
+      
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="project-meta">
+            <span class="project-category" [class]="'category-' + project.category">
+              {{ project.category | titlecase }}
+            </span>
+            <span class="project-duration">{{ project.duration }}</span>
+          </div>
+          
+          <h1 class="project-title">{{ project.title }}</h1>
+          <p class="project-description">{{ project.description }}</p>
+          
+          <div class="project-links">
+            <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-primary">
+              <i class="icon github"></i>
+              Ver Código
+            </a>
+            <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-secondary">
+              <i class="icon external"></i>
+              Ver Demo
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <img [src]="project.imageUrl" [alt]="project.title">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="project-details">
+    <div class="container">
+      <div class="details-grid">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Detailed Description -->
+          <div class="content-section">
+            <h2>Descripción del Proyecto</h2>
+            <p class="detailed-description">{{ project.detailedDescription }}</p>
+          </div>
+
+          <!-- Features -->
+          <div class="content-section">
+            <h2>Características Principales</h2>
+            <ul class="features-list">
+              <li *ngFor="let feature of project.features">{{ feature }}</li>
+            </ul>
+          </div>
+
+          <!-- Gallery -->
+          <div class="content-section" *ngIf="project.gallery.length > 0">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+              <div class="gallery-main">
+                <img [src]="project.gallery[currentImageIndex]" [alt]="'Imagen ' + (currentImageIndex + 1) + ' de ' + project.title">
+                <button class="gallery-nav prev" (click)="previousImage()" *ngIf="project.gallery.length > 1">
+                  <i class="icon arrow-left"></i>
+                </button>
+                <button class="gallery-nav next" (click)="nextImage()" *ngIf="project.gallery.length > 1">
+                  <i class="icon arrow-right"></i>
+                </button>
+              </div>
+              <div class="gallery-thumbnails" *ngIf="project.gallery.length > 1">
+                <img 
+                  *ngFor="let image of project.gallery; let i = index" 
+                  [src]="image" 
+                  [alt]="'Miniatura ' + (i + 1)"
+                  [class.active]="i === currentImageIndex"
+                  (click)="currentImageIndex = i">
+              </div>
+            </div>
+          </div>
+
+          <!-- Challenges & Solutions -->
+          <div class="content-section">
+            <h2>Desafíos y Soluciones</h2>
+            <div class="challenges-solutions">
+              <div class="challenges">
+                <h3>Desafíos Enfrentados</h3>
+                <ul>
+                  <li *ngFor="let challenge of project.challenges">{{ challenge }}</li>
+                </ul>
+              </div>
+              <div class="solutions">
+                <h3>Soluciones Implementadas</h3>
+                <ul>
+                  <li *ngFor="let solution of project.solutions">{{ solution }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lessons Learned -->
+          <div class="content-section" *ngIf="project.lessonsLearned.length > 0">
+            <h2>Lecciones Aprendidas</h2>
+            <ul class="lessons-list">
+              <li *ngFor="let lesson of project.lessonsLearned">{{ lesson }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Project Info -->
+          <div class="info-card">
+            <h3>Información del Proyecto</h3>
+            <div class="info-item">
+              <span class="label">Duración:</span>
+              <span class="value">{{ project.duration }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Tamaño del equipo:</span>
+              <span class="value">{{ project.teamSize }} persona{{ project.teamSize > 1 ? 's' : '' }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Mi rol:</span>
+              <span class="value">{{ project.myRole }}</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Categoría:</span>
+              <span class="value category-badge" [class]="'category-' + project.category">
+                {{ project.category | titlecase }}
+              </span>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <div class="info-card">
+            <h3>Tecnologías Utilizadas</h3>
+            <div class="tech-tags">
+              <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+          </div>
+
+          <!-- Project Links -->
+          <div class="info-card">
+            <h3>Enlaces del Proyecto</h3>
+            <div class="project-links-sidebar">
+              <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="link-btn">
+                <i class="icon github"></i>
+                Repositorio GitHub
+              </a>
+              <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="link-btn">
+                <i class="icon external"></i>
+                Demo en Vivo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+}
+
+<!-- Loading or Error State -->
+@if (!project) {
+<div class="project-not-found">
+  <div class="container">
+    <h1>Proyecto no encontrado</h1>
+    <p>El proyecto que buscas no existe o ha sido eliminado.</p>
+    <button class="btn btn-primary" (click)="goBack()">Volver a Proyectos</button>
+  </div>
+</div>
+}
