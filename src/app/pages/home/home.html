@@ -1,0 +1,92 @@
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Hola, soy <span class="highlight">Pablo Menéndez Navarro</span>
+        </h1>
+        <h2 class="hero-subtitle">Desarrollador Full Stack</h2>
+        <p class="hero-description">
+          Especializado en desarrollo backend con Java/Spring Boot y frontend con Angular. 
+          Apasionado por crear soluciones tecnológicas innovadoras y siempre aprendiendo nuevas tecnologías.
+        </p>
+        <div class="hero-buttons">
+          <a routerLink="/projects" class="btn btn-primary">Ver Proyectos</a>
+          <a routerLink="/contact" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png" alt="Pablo Menéndez Navarro">
+          </div>
+          <div class="profile-info">
+            <h3>Pablo Menéndez Navarro</h3>
+            <p>Desarrollador Full Stack</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Ionic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quick-stats">
+  <div class="stats-container">
+    <div class="stat-item">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4+</div>
+      <div class="stat-label">Proyectos completados</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5+</div>
+      <div class="stat-label">Tecnologías</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Fuletazo</div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects">
+  <div class="container">
+    <h2 class="section-title">Proyectos Destacados</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of featuredProjects">
+        <div class="project-image">
+          <img [src]="project.imageUrl" [alt]="project.title">
+        </div>
+        <div class="project-content">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <div class="project-tech">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+          </div>
+          <div class="project-links">
+            <a [href]="project.githubUrl" target="_blank" rel="noopener" *ngIf="project.githubUrl" class="btn btn-small">
+              <i class="icon github"></i> Código
+            </a>
+            <a [href]="project.liveUrl" target="_blank" rel="noopener" *ngIf="project.liveUrl" class="btn btn-small btn-primary">
+              <i class="icon external"></i> Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a routerLink="/projects" class="btn btn-outline">Ver todos los proyectos</a>
+    </div>
+  </div>
+</section>

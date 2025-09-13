@@ -4,7 +4,7 @@ Este es mi **portfolio personal**, desarrollado con **Angular**, para mostrar mi
 
 ## 🚀 Tecnologías
 - Angular / TypeScript  
-- HTML / CSS / SCSS  
+- HTML / CSS  
 - Java, Spring Boot, Hibernate  
 - MySQL, Docker  
 - GitHub (control de versiones)  
@@ -15,14 +15,8 @@ Este es mi **portfolio personal**, desarrollado con **Angular**, para mostrar mi
 - 📱 Diseño responsive y fácil de navegar  
 - 🔗 Enlaces de contacto y redes profesionales  
 
-## 🛠️ Desarrollo
-
-### Servidor de desarrollo
-Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquier archivo fuente.
-
-### Build
-Ejecuta `ng build` para construir el proyecto. Los archivos de construcción se almacenarán en el directorio `dist/`.
-
 ## 📬 Contacto
 - Email: **pablomnavarro9@gmail.com**  
-- LinkedIn: [linkedin.com/in/pablomn02](https://www.linkedin.com/in/pablomn02)
+- LinkedIn: [linkedin.com/in/pablomn02](https://www.linkedin.com/in/pablomn02)  
+
+
