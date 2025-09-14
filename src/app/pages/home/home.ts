@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { PortfolioService } from '../../services/portfolio';
 import { Project } from '../../models/project';
+import { WavesComponent } from '../../components/waves/waves';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, WavesComponent],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

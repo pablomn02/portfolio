@@ -2,6 +2,7 @@
 <div class="project-detail">
   <!-- Hero Section -->
   <section class="project-hero">
+    <app-particles></app-particles>
     <div class="container">
       <button class="back-btn" (click)="goBack()">
         <i class="icon arrow-left"></i>
@@ -82,60 +83,10 @@
               </div>
             </div>
           </div>
-
-          <!-- Challenges & Solutions -->
-          <div class="content-section">
-            <h2>Desafíos y Soluciones</h2>
-            <div class="challenges-solutions">
-              <div class="challenges">
-                <h3>Desafíos Enfrentados</h3>
-                <ul>
-                  <li *ngFor="let challenge of project.challenges">{{ challenge }}</li>
-                </ul>
-              </div>
-              <div class="solutions">
-                <h3>Soluciones Implementadas</h3>
-                <ul>
-                  <li *ngFor="let solution of project.solutions">{{ solution }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lessons Learned -->
-          <div class="content-section" *ngIf="project.lessonsLearned.length > 0">
-            <h2>Lecciones Aprendidas</h2>
-            <ul class="lessons-list">
-              <li *ngFor="let lesson of project.lessonsLearned">{{ lesson }}</li>
-            </ul>
-          </div>
         </div>
 
         <!-- Sidebar -->
         <div class="sidebar">
-          <!-- Project Info -->
-          <div class="info-card">
-            <h3>Información del Proyecto</h3>
-            <div class="info-item">
-              <span class="label">Duración:</span>
-              <span class="value">{{ project.duration }}</span>
-            </div>
-            <div class="info-item">
-              <span class="label">Tamaño del equipo:</span>
-              <span class="value">{{ project.teamSize }} persona{{ project.teamSize > 1 ? 's' : '' }}</span>
-            </div>
-            <div class="info-item">
-              <span class="label">Mi rol:</span>
-              <span class="value">{{ project.myRole }}</span>
-            </div>
-            <div class="info-item">
-              <span class="label">Categoría:</span>
-              <span class="value category-badge" [class]="'category-' + project.category">
-                {{ project.category | titlecase }}
-              </span>
-            </div>
-          </div>
-
           <!-- Technologies -->
           <div class="info-card">
             <h3>Tecnologías Utilizadas</h3>

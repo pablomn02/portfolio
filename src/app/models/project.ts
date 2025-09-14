@@ -9,11 +9,6 @@ export interface Project {
   liveUrl?: string;
   category: 'frontend' | 'backend' | 'fullstack';
   features: string[];
-  challenges: string[];
-  solutions: string[];
   duration: string;
-  teamSize: number;
-  myRole: string;
   gallery: string[];
-  lessonsLearned: string[];
 }

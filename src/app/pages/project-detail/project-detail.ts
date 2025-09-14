@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, ActivatedRoute, Router } from '@angular/router';
 import { PortfolioService } from '../../services/portfolio';
 import { Project } from '../../models/project';
+import { ParticlesComponent } from '../../components/particles/particles';
 
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ParticlesComponent],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.scss'
 })
