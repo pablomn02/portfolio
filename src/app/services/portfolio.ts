@@ -14,21 +14,20 @@ export class PortfolioService {
       {
         id: 1,
         title: 'Fixer',
-        description: 'Backend de la aplicación móvil de búsqueda de profesionales mediante geolocalización.',
+        description: 'App móvil de búsqueda de profesionales mediante geolocalización.',
         detailedDescription: 'Fixer es una aplicación innovadora que conecta usuarios con profesionales de servicios mediante geolocalización. Como desarrollador backend, fui responsable de crear una API REST robusta que maneja la autenticación, geolocalización en tiempo real, y gestión de citas. El sistema utiliza algoritmos de búsqueda por proximidad para encontrar los profesionales más cercanos y disponibles.',
-        technologies: ['Spring Boot', 'MySQL', 'JWT', 'Docker', 'GitHub Actions', 'REST API'],
-        imageUrl: 'https://pablomn25.iesmontenaranco.com/assets/images/logo-icono.png',
+        technologies: ['Spring Boot', 'MySQL', 'JWT', 'Docker', 'REST API', 'Ionic', 'Angular'],
+        imageUrl: 'assets/images/logo-icono.png',
         githubUrl: 'https://github.com/pablomn02/fixer-app',
-        category: 'backend',
+        category: 'fullstack',
         features: [
           'Sistema de autenticación JWT seguro',
           'API de geolocalización en tiempo real',
-          'Algoritmo de búsqueda por proximidad',
+          'Búsqueda por proximidad',
           'Sistema de gestión de citas',
-          'Notificaciones push integradas',
           'Panel de administración completo'
         ],
-        duration: '6 meses',
+        duration: '3 meses',
         gallery: [
           'https://pablomn25.iesmontenaranco.com/assets/images/logo-icono.png',
           'https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png'
