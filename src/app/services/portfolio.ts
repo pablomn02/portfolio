@@ -17,7 +17,7 @@ export class PortfolioService {
         description: 'App móvil de búsqueda de profesionales mediante geolocalización.',
         detailedDescription: 'Fixer es una aplicación innovadora que conecta usuarios con profesionales de servicios mediante geolocalización. Como desarrollador backend, fui responsable de crear una API REST robusta que maneja la autenticación, geolocalización en tiempo real, y gestión de citas. El sistema utiliza algoritmos de búsqueda por proximidad para encontrar los profesionales más cercanos y disponibles.',
         technologies: ['Spring Boot', 'MySQL', 'JWT', 'Docker', 'REST API', 'Ionic', 'Angular'],
-        imageUrl: 'assets/images/logo-icono.png',
+        imageUrl: 'https://wecozyatelier.com/wp-content/uploads/2025/09/logo-icono.png',
         githubUrl: 'https://github.com/pablomn02/fixer-app',
         category: 'fullstack',
         features: [
