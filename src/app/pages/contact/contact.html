@@ -1,55 +1,75 @@
 <section class="contact-hero">
   <div class="container">
-    <h1>Contacto</h1>
-    <p class="lead">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    <div class="hero-content">
+      <h1>Contacto</h1>
+      <p class="lead">¿Tienes un proyecto en mente? ¿Quieres colaborar?</p>
+    </div>
   </div>
 </section>
 
 <section class="contact-content">
   <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2>Información de Contacto</h2>
-        <div class="contact-item">
-          <i class="icon email"></i>
-          <div>
-            <h3>Email</h3>
-            <p>pablomnavarro9@gmail.com</p>
+    <div class="contact-methods-grid">
+      <!-- Email -->
+      <div class="contact-method-card email-card">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <i class="icon email"></i>
           </div>
+          <h3>Email</h3>
         </div>
-        <div class="contact-item">
-          <i class="icon location"></i>
-          <div>
-            <h3>Ubicación</h3>
-            <p>España</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="icon linkedin"></i>
-          <div>
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/pablomn02" target="_blank" rel="noopener">linkedin.com/in/pablomn02</a>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="icon github"></i>
-          <div>
-            <h3>GitHub</h3>
-            <a href="https://github.com/pablomn02" target="_blank" rel="noopener">github.com/pablomn02</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <h2>Enviar Mensaje</h2>
-        <p class="form-description">¿Tienes un proyecto en mente o quieres colaborar? ¡Hablemos!</p>
-        
-        <div class="email-button-container">
-          <a href="mailto:pablomnavarro9@gmail.com" class="btn btn-primary btn-large">
+        <p class="card-description">La forma más directa de contactarme</p>
+        <div class="contact-actions">
+          <a href="mailto:pablomnavarro9@gmail.com?subject=Consulta desde portfolio" 
+             class="btn btn-primary">
             <i class="icon email"></i>
             Enviar Email
           </a>
-          <p class="email-note">Se abrirá tu cliente de correo con mi dirección ya configurada</p>
+        </div>
+        <div class="contact-info">
+          <span class="contact-detail">pablomnavarro9@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-method-card linkedin-card">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <i class="icon linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+        </div>
+        <p class="card-description">Conecta profesionalmente conmigo</p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/pablomn02" 
+             target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="icon linkedin"></i>
+            Conectar
+          </a>
+        </div>
+        <div class="contact-info">
+          <span class="contact-detail">linkedin.com/in/pablomn02</span>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="contact-method-card github-card">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <i class="icon github"></i>
+          </div>
+          <h3>GitHub</h3>
+        </div>
+        <p class="card-description">Explora mi código y proyectos</p>
+        <div class="contact-actions">
+          <a href="https://github.com/pablomn02" 
+             target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="icon github"></i>
+            Ver Código
+          </a>
+        </div>
+        <div class="contact-info">
+          <span class="contact-detail">github.com/pablomn02</span>
         </div>
       </div>
     </div>

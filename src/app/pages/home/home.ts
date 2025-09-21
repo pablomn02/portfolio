@@ -13,10 +13,14 @@ import { WavesComponent } from '../../components/waves/waves';
 })
 export class HomeComponent implements OnInit {
   featuredProjects: Project[] = [];
+  totalProjects: number = 0;
+  totalSkills: number = 0;
 
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit() {
     this.featuredProjects = this.portfolioService.getProjects().slice(0, 3);
+    this.totalProjects = this.portfolioService.getProjects().length;
+    this.totalSkills = this.portfolioService.getSkills().length;
   }
 }

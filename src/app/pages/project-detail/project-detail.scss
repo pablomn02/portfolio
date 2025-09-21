@@ -584,7 +584,9 @@
   .gallery {
     .gallery-main {
       img {
-        height: 250px;
+        height: 300px;
+        object-fit: contain;
+        background: var(--gray-50);
       }
       
       .gallery-nav {
@@ -610,7 +612,9 @@
   .gallery {
     .gallery-main {
       img {
-        height: 200px;
+        height: 250px;
+        object-fit: contain;
+        background: var(--gray-50);
       }
     }
     

@@ -4,26 +4,27 @@
       <div class="about-text">
         <h1>Sobre mí</h1>
         <p class="lead">
-          Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras. 
-          Especializado en desarrollo backend con Java/Spring Boot y frontend con Angular.
+          Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y Telecomunicaciones. 
+          Desarrollador Java especializado en Spring Boot, con experiencia en desarrollo web y mantenimiento de telecomunicaciones.
         </p>
         <div class="about-stats">
           <div class="stat">
             <span class="stat-number">3+</span>
-            <span class="stat-label">Años programando</span>
+            <span class="stat-label">Años de experiencia</span>
           </div>
           <div class="stat">
-            <span class="stat-number">4+</span>
+            <span class="stat-number">{{ totalProjects }}+</span>
             <span class="stat-label">Proyectos completados</span>
           </div>
           <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Tecnologías</span>
+            <span class="stat-number">{{ totalSkills }}+</span>
+            <span class="stat-label">Tecnologías utilizadas</span>
           </div>
         </div>
       </div>
       <div class="about-image">
-        <img src="https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png" alt="Pablo Menéndez Navarro">
+        <img src="https://media.licdn.com/dms/image/v2/D4D16AQFBfHs8NFaShQ/profile-displaybackgroundimage-shrink_350_1400/B4DZhCKKiZGkAY-/0/1753456618021?e=1761177600&v=beta&t=icPMseHxkr493UIrfy-yT2XUyykvwEAZfISQIGLqQeY" 
+              alt="Pablo Menéndez Navarro">
       </div>
     </div>
   </div>
@@ -31,30 +32,242 @@
 
 <section class="experience">
   <div class="container">
-    <h2>Mi Experiencia</h2>
+    <h2>Mi Trayectoria</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h3>Desarrollador Full Stack</h3>
-          <p class="timeline-period">2021 - Presente</p>
-          <p>Desarrollo de aplicaciones web completas utilizando Angular para el frontend y Spring Boot para el backend. Implementación de APIs REST, bases de datos MySQL y PostgreSQL, y despliegue con Docker.</p>
+          <h3>Desarrollo Java y MySQL para el SEPE</h3>
+          <p class="timeline-company">GETRONICS</p>
+          <p class="timeline-period">2025</p>
+          <p>Desarrollo de aplicaciones Java con integración de bases de datos MySQL para el Servicio Público de Empleo Estatal (SEPE). Implementación de soluciones backend robustas y escalables.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h3>Desarrollador Backend</h3>
-          <p class="timeline-period">2020 - 2021</p>
-          <p>Especialización en desarrollo backend con Java, Spring Framework, Hibernate y bases de datos relacionales. Creación de APIs robustas y escalables.</p>
+          <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+          <p class="timeline-company">IES MONTE NARANCO</p>
+          <p class="timeline-period">2025</p>
+          <p>Formación especializada en desarrollo de aplicaciones multiplataforma, adquiriendo competencias en programación, bases de datos y tecnologías web modernas.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <h3>Desarrollador Frontend</h3>
-          <p class="timeline-period">2019 - 2020</p>
-          <p>Desarrollo de interfaces de usuario con HTML, CSS, JavaScript y frameworks modernos. Enfoque en experiencia de usuario y diseño responsive.</p>
+          <h3>Mantenimiento de Telecomunicaciones</h3>
+          <p class="timeline-company">EMAR TELECOMUNICACIONES</p>
+          <p class="timeline-period">2022</p>
+          <p>Mantenimiento de emplazamientos de Telecomunicaciones de Telefónica en Asturias. Gestión de infraestructura de telecomunicaciones y soporte técnico especializado.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Técnico Superior de Telecomunicaciones e Informática</h3>
+          <p class="timeline-company">CIFP CERDEÑO</p>
+          <p class="timeline-period">2022</p>
+          <p>Formación especializada en telecomunicaciones e informática, adquiriendo conocimientos técnicos avanzados en el sector.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Bachillerato Mixto</h3>
+          <p class="timeline-company">IES CESAR RODRIGUEZ</p>
+          <p class="timeline-period">2020</p>
+          <p>Formación académica de bachillerato que sentó las bases para mi desarrollo profesional en el ámbito tecnológico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="skills">
+  <div class="container">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-showcase">
+      <!-- Lenguajes de Programación -->
+      <div class="skill-section">
+        <h3 class="section-title">
+          <i class="icon code"></i>
+          Lenguajes de Programación
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                Java
+              </h4>
+              <p>Desarrollo backend</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                JavaScript
+              </h4>
+              <p>Desarrollo frontend y aplicaciones web</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-icon">
+                TypeScript
+              </h4>
+              <p>Desarrollo tipado para aplicaciones web</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="tech-icon">
+                Kotlin
+              </h4>
+              <p>Lenguaje moderno para desarrollo multiplataforma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks y Librerías -->
+      <div class="skill-section">
+        <h3 class="section-title">
+          <i class="icon layers"></i>
+          Frameworks y Librerías
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-icon">
+                Spring Boot
+              </h4>
+              <p>Framework para desarrollo de aplicaciones Java</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate" class="tech-icon">
+                Hibernate
+              </h4>
+              <p>ORM para mapeo objeto-relacional</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="tech-icon">
+                Angular
+              </h4>
+              <p>Framework para desarrollo de aplicaciones web</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="Ionic" class="tech-icon">
+                Ionic
+              </h4>
+              <p>Framework para desarrollo de aplicaciones móviles</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JPA" class="tech-icon">
+                JPA
+              </h4>
+              <p>API de persistencia Java para mapeo objeto-relacional</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JDBC" class="tech-icon">
+                JDBC
+              </h4>
+              <p>API de Java para conectividad con bases de datos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bases de Datos y Herramientas -->
+      <div class="skill-section">
+        <h3 class="section-title">
+          <i class="icon tools"></i>
+          Bases de Datos y Herramientas
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                MySQL
+              </h4>
+              <p>Sistema de gestión de bases de datos relacionales</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-icon">
+                Docker
+              </h4>
+              <p>Plataforma de contenedores para despliegue</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="tech-icon">
+                GitHub
+              </h4>
+              <p>Control de versiones y colaboración en proyectos</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" class="tech-icon">
+                jQuery
+              </h4>
+              <p>Librería JavaScript para manipulación del DOM</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven" class="tech-icon">
+                Maven
+              </h4>
+              <p>Herramienta de gestión y construcción de proyectos Java</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-icon">
+                MongoDB
+              </h4>
+              <p>Base de datos NoSQL orientada a documentos</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <h4>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="PL/SQL" class="tech-icon">
+                PL/SQL
+              </h4>
+              <p>Lenguaje de programación procedural para Oracle</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

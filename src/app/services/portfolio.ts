@@ -23,7 +23,7 @@ export class PortfolioService {
         category: 'fullstack',
         features: [
           'Sistema de autenticación JWT seguro',
-          'API de geolocalización en tiempo real',
+          'Sistema de geolocalización en tiempo real',
           'Búsqueda por proximidad',
           'Sistema de gestión de citas',
           'Panel de administración completo'
@@ -41,7 +41,7 @@ export class PortfolioService {
         detailedDescription: 'Panaurum es un proyecto intermodular desarrollado para el festival de bateo de oro de Navelgas. Como desarrollador full stack, creé una aplicación web completa que incluye un sistema de gestión de eventos, registro de participantes, y una plataforma de e-commerce para la venta de productos relacionados con el festival. El proyecto integra múltiples tecnologías para crear una experiencia digital completa.',
         technologies: ['Java', 'Spring Boot', 'JWT', 'MySQL', 'Ionic', 'Angular', 'HTML', 'CSS', 'TypeScript'],
         imageUrl: 'https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png',
-        githubUrl: 'https://github.com/pablomn02/ecommerce-api',
+        githubUrl: 'https://github.com/pablomn02',
         category: 'fullstack',
         features: [
           'Sistema de gestión de eventos y participantes',
