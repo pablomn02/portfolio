@@ -30,7 +30,7 @@ export class PortfolioService {
         ],
         duration: '3 meses',
         gallery: [
-          'https://pablomn25.iesmontenaranco.com/assets/images/logo-icono.png',
+          'assets/images/logo-icono.png',
           'https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png'
         ]
       },
