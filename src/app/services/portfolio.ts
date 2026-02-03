@@ -153,7 +153,8 @@ export class PortfolioService {
       // Tools
       { id: 12, name: 'Docker', level: 'intermediate', category: 'tools', icon: 'docker' },
       { id: 13, name: 'Git', level: 'advanced', category: 'tools', icon: 'git' },
-      { id: 14, name: 'GitHub', level: 'advanced', category: 'tools', icon: 'github' }
+      { id: 14, name: 'GitHub', level: 'advanced', category: 'tools', icon: 'github' },
+      { id: 15, name: 'AWS', level: 'intermediate', category: 'tools', icon: 'aws' }
     ];
   }
 
