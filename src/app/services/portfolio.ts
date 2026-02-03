@@ -17,7 +17,7 @@ export class PortfolioService {
         description: 'App móvil de búsqueda de profesionales mediante geolocalización.',
         detailedDescription: 'Fixer es una aplicación que conecta usuarios con profesionales de servicios mediante geolocalización. Como unico desarrollador de este proyecto, fui responsable de crear una API REST robusta que manejara la autenticación, geolocalización en tiempo real, y gestión de citas. El sistema utiliza algoritmos de búsqueda por proximidad para encontrar los profesionales más cercanos y disponibles.',
         technologies: ['Spring Boot', 'MySQL', 'JWT', 'Docker', 'REST API', 'Ionic', 'Angular'],
-        imageUrl: 'assets/images/logo-icono.png',
+        imageUrl: '/assets/images/logo-icono.png',
         githubUrl: 'https://github.com/pablomn02',
         liveUrl: 'https://pablomn25.iesmontenaranco.com',
         category: 'fullstack',
@@ -30,7 +30,7 @@ export class PortfolioService {
         ],
         duration: '3 meses',
         gallery: [
-          'assets/images/logo-icono.png',
+          '/assets/images/logo-icono.png',
           'https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1-1024x512.png'
         ]
       },
@@ -60,7 +60,7 @@ export class PortfolioService {
         description: 'Página web corporativa para WECOZY diseñada con WordPress',
         detailedDescription: 'WECOZY es una página web corporativa desarrollada con WordPress que presenta los servicios de diseño y atelier de la empresa. El proyecto incluye un diseño moderno y responsive, optimización SEO, integración de formularios de contacto, galería de trabajos, y un sistema de gestión de contenido fácil de usar para el cliente. La web está optimizada para conversión y experiencia de usuario.',
         technologies: ['WordPress', 'PHP', 'HTML5', 'CSS3', 'JavaScript', 'MySQL', 'SEO', 'Responsive Design'],
-        imageUrl: 'assets/images/wecozy.jpeg',
+        imageUrl: '/assets/images/wecozy.jpeg',
         liveUrl: 'https://wecozyatelier.com',
         category: 'frontend',
         features: [
