@@ -125,7 +125,7 @@ export class PortfolioService {
       },
       {
         id: 6,
-        title: 'Fintrackr',
+        title: 'FinTracker',
         description: 'App para gestionar la economía doméstica (familia o persona) de forma sencilla.',
         detailedDescription: 'Fintrackr es una aplicación de gestión financiera doméstica pensada para familias y personas que quieren tener control de sus gastos e ingresos. Permite almacenar y organizar facturas, categorizar movimientos, visualizar resúmenes, y descubrir oportunidades de ahorro mediante recomendaciones y nuevas ofertas. El objetivo es centralizar la información financiera y convertirla en decisiones claras para el día a día.',
         technologies: ['Angular', 'TypeScript', 'UX/UI', 'REST API'],
