@@ -122,6 +122,28 @@ export class PortfolioService {
           'https://via.placeholder.com/800x400/4f46e5/ffffff?text=ToDo+App+Main+View',
           'https://via.placeholder.com/800x400/6366f1/ffffff?text=Task+Management'
         ]
+      },
+      {
+        id: 6,
+        title: 'Fintrackr',
+        description: 'App para gestionar la economía doméstica (familia o persona) de forma sencilla.',
+        detailedDescription: 'Fintrackr es una aplicación de gestión financiera doméstica pensada para familias y personas que quieren tener control de sus gastos e ingresos. Permite almacenar y organizar facturas, categorizar movimientos, visualizar resúmenes, y descubrir oportunidades de ahorro mediante recomendaciones y nuevas ofertas. El objetivo es centralizar la información financiera y convertirla en decisiones claras para el día a día.',
+        technologies: ['Angular', 'TypeScript', 'UX/UI', 'REST API'],
+        imageUrl: '/assets/images/background-blur.jpg',
+        githubUrl: 'https://github.com/pablomn02',
+        category: 'fullstack',
+        features: [
+          'Registro de ingresos y gastos por categorías',
+          'Subida y organización de facturas (documentos e imágenes)',
+          'Dashboard con resúmenes y métricas mensuales',
+          'Alertas y recordatorios (suscripciones, vencimientos)',
+          'Recomendaciones de ahorro y ofertas relevantes',
+          'Soporte multiusuario para unidad familiar'
+        ],
+        duration: 'En desarrollo',
+        gallery: [
+          '/assets/images/background-blur.jpg'
+        ]
       }
 
     ];
